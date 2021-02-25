@@ -13,4 +13,7 @@ export default styled.button`
   &.active {
     color: white;
   }
+  &:active {
+    color: #373737;
+  }
 `
