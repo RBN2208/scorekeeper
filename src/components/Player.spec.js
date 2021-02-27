@@ -16,4 +16,12 @@ describe('Player', () => {
     expect(callBackPlus).toHaveBeenCalledTimes(1)
     expect(callBackMinus).toHaveBeenCalledTimes(1)
   })
+  it('changes color on click', () => {
+    const { rerender } = render(<Player name="John" score={0} />)
+    expect(screen.getByText('0')).toMatchSnapshot()
+    rerender(<Player name="John" score={10} />)
+    expect(screen.getByText('10')).toMatchSnapshot()
+    rerender(<Player name="John" score={-10} />)
+    expect(screen.getByText('-10')).toMatchSnapshot()
+  })
 })

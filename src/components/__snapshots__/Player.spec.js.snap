@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player changes color on click 1`] = `
+<span>
+  0
+</span>
+`;
+
+exports[`Player changes color on click 2`] = `
+<span>
+  10
+</span>
+`;
+
+exports[`Player changes color on click 3`] = `
+<span>
+  -10
+</span>
+`;
